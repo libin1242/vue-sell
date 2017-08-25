@@ -45,143 +45,117 @@
 	};
 </script>
 
-<style lang="less" rel="stylesheet/less">
-	@import "../../common/stylus/mixin.less";
-	.header {
-		position: relative;
-		overflow: hidden;
-		color: #fff;
-		background: rgba(7,17,27,0.5);
-		.content-wrapper {
-			
-			position: relative;
-			padding: 24px 12px 18px 24px;
-			font-size: 0;
-			.avatar {
+<style lang="stylus" rel="stylesheet/stylus">
+	@import "../../common/stylus/mixin.styl";
+	.header 
+		position: relative
+		overflow: hidden
+		color: #fff
+		background: rgba(7,17,27,0.5)
+		.content-wrapper 		
+			position: relative
+			padding: 24px 12px 18px 24px
+			font-size: 0
+			.avatar 
 				display: inline-block;
 				vertical-align: top;
-				img {
-					border-radius: 2px
-				}
-			}
-			.content {				
-				display: inline-block;
-				margin-left: 16px;
-				.title {
-					margin: 2px 0 8px 0;
-					.brand {
-						display: inline-block;
-						vertical-align: top;
-						width: 30px;
-						height: 18px;
-						background: url(brand@2x.png) no-repeat;
-						background-size: 30px 18px;
-					}
-					.name {
-						margin-left: 6px;
-						font-size: 16px;
-						line-height: 18px;
-						font-weight: bold;
-					}
-				}
-				.description {
-					margin-bottom: 10px;
-					line-height: 12px;
-					font-size: 12px;
-				}
-				.supports {
-					.icon {
-						display: inline-block;
-						width: 12px;
-						height: 12px;
-						vertical-align: top;
-						margin-right: 4px;
-						&.decrease {
-							background: url(decrease_1@2x.png) no-repeat;
-							background-size: 12px 12px;
-						}
-						&.discount {
-							background: url(discount_1@2x.png) no-repeat;
-							background-size: 12px 12px;
-						}
-						&.guarantee {
-							background: url(guarantee_1@2x.png) no-repeat;
-							background-size: 12px 12px;
-						}
-						&.invoice {
-							background: url(invoice_1@2x.png) no-repeat;
-							background-size: 12px 12px;
-						}
-						&.special {
-							background: url(special_1@2x.png) no-repeat;
-							background-size: 12px 12px;
-						}
-					}
-					.text {
-						font-size: 10px;
-						line-height: 12px;
-					}
-				}
-			}
-			.support-count {
-				position: absolute;
-				right: 12px;
-				bottom: 14px;
-				padding: 0 8px;
-				height: 24px;
-				line-height: 24px;
-				border-radius: 14px;
-				background: rgba(0, 0, 0, 0.2);
-				text-align: center;
-				.count {
-					font-size: 10px;
-					vertical-align: top;
-				}
-				.icon-thumb_up {
-					margin-left: 2px;
-					line-height: 24px;
-					font-size: 10px;
-				}
-			}
-		}
-		.bulletin-wrapper {
-			position: relative;
-			height: 28px;
-			padding: 0 22px 0 12px;
-			line-height: 28px;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			background: rgba(7, 17, 27, 0.2);
-			.bulletin-title {
-				display: inline-block;
-				vertical-align: top;
-				margin-top: 8px;
-				width: 22px;
-				height: 12px;
-				background: url(bulletin@2x.png) no-repeat;
-				background-size: 22px 12px;
-			}
-			.bulletin-text {
-				vertical-align: top;
-				font-size: 14px;
-				margin: 0 4px;
-			}
-			.icon-thumb_up {
-				position: absolute;
-				font-size: 10px;
-				right: 12px;
-				top: 5px;
-			}
-		}
-		.backgroud {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: -1;
-			filter: blur(10px);
-		}
-	}
+				img 
+					border-radius: 2px							
+			.content 			
+				display: inline-block
+				margin-left: 16px
+				.title 
+					margin: 2px 0 8px 0
+					.brand 
+						display: inline-block
+						vertical-align: top
+						width: 30px
+						height: 18px
+						background: url(brand@2x.png) no-repeat
+						background-size: 30px 18px
+					.name 
+						margin-left: 6px
+						font-size: 16px
+						line-height: 18px
+						font-weight: bold
+				.description 
+					margin-bottom: 10px
+					line-height: 12px
+					font-size: 12px
+				.supports 
+					.icon 
+						display: inline-block
+						width: 12px
+						height: 12px
+						vertical-align: top
+						margin-right: 4px
+						&.decrease 
+							background: url(decrease_1@2x.png) no-repeat
+							background-size: 12px 12px
+						&.discount 
+							background: url(discount_1@2x.png) no-repeat
+							background-size: 12px 12px
+						&.guarantee 
+							background: url(guarantee_1@2x.png) no-repeat
+							background-size: 12px 12px
+						&.invoice 
+							background: url(invoice_1@2x.png) no-repeat
+							background-size: 12px 12px
+						&.special 
+							background: url(special_1@2x.png) no-repeat
+							background-size: 12px 12px
+					.text 
+						font-size: 10px
+						line-height: 12px
+			.support-count 
+				position: absolute
+				right: 12px
+				bottom: 14px
+				padding: 0 8px
+				height: 24px
+				line-height: 24px
+				border-radius: 14px
+				background: rgba(0, 0, 0, 0.2)
+				text-align: center
+				.count 
+					font-size: 10px
+					vertical-align: top
+				.icon-thumb_up 
+					margin-left: 2px
+					line-height: 24px
+					font-size: 10px
+		.bulletin-wrapper 
+			position: relative
+			height: 28px
+			padding: 0 22px 0 12px
+			line-height: 28px
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			background: rgba(7, 17, 27, 0.2)
+			.bulletin-title 
+				display: inline-block
+				vertical-align: top
+				margin-top: 8px
+				width: 22px
+				height: 12px
+				background: url(bulletin@2x.png) no-repeat
+				background-size: 22px 12px
+			.bulletin-text 
+				vertical-align: top
+				font-size: 14px
+				margin: 0 4px
+			.icon-thumb_up 
+				position: absolute
+				font-size: 10px
+				right: 12px
+				top: 10px
+		.backgroud 
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			z-index: -1
+			filter: blur(10px)
 </style>
