@@ -24,6 +24,7 @@ module.exports = {
         "space-before-blocks": 0,
         "space-before-function-paren": 0,
         "quotes": 0,
-        "eol-last": 0
+        "eol-last": 0,
+        "no-unused-vars":0
     }
 }
